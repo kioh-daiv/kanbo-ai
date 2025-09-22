@@ -289,7 +289,7 @@ const APIManager = {
             app_version: CONFIG.APP.VERSION
         };
         
-        return this.makeRequest('/diagnosis', payload);
+        return this.makeRequest('', payload);
     },
     
     // Submit follow-up answers
