@@ -713,7 +713,7 @@ const App = {
             AppState.lastSubmissionTime = Date.now();
             
             // Render results
-            UIRenderer.renderResults(result.content);
+            UIRenderer.renderResults(result.message.content);
             
             // Show success message
             const message = CONFIG.SUCCESS_MESSAGES.SUBMISSION_SUCCESS[AppState.form.language];
@@ -766,7 +766,7 @@ const App = {
             AppState.error = null;
             
             // Render updated results
-            UIRenderer.renderResults(result.content);
+            UIRenderer.renderResults(result.message.content);
             
             // Show success message
             const message = CONFIG.SUCCESS_MESSAGES.FOLLOWUP_SUCCESS[AppState.form.language];
