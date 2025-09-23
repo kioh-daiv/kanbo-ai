@@ -168,7 +168,7 @@ const LanguageManager = {
             'error-title': 'エラー',
             'success-title': '成功',
             'disclaimer': '本システムは診断支援ツールです。医師の診断を代替するものではありません。',
-            'contact': 'お問い合わせ: support@kanpo-ai.example.com',
+            'contact': 'お問い合わせ: x-harumi-office@gmail.com',
             'version': 'バージョン',
             'model': 'モデル',
             'close-btn': '閉じる'
@@ -200,7 +200,7 @@ const LanguageManager = {
             'error-title': 'Error',
             'success-title': 'Success',
             'disclaimer': 'This system is a diagnostic support tool and does not replace physician diagnosis.',
-            'contact': 'Contact: support@kanpo-ai.example.com',
+            'contact': 'Contact: x-harumi-office@gmail.com',
             'version': 'Version',
             'model': 'Model',
             'close-btn': 'Close'

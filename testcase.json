@@ -1,0 +1,92 @@
+[
+    {
+      "session_id": "test-001",
+      "chief_complaint": "頭痛",
+      "symptoms": ["pain_head"],
+      "free_text": "こめかみがズキズキ痛む。寒気も少しある。",
+      "concomitant_meds": ["ロキソニン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-002",
+      "chief_complaint": "腰痛",
+      "symptoms": ["pain_back"],
+      "free_text": "腰が重く、石を背負っているように感じる。",
+      "concomitant_meds": [],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-003",
+      "chief_complaint": "寒気",
+      "symptoms": ["general_cold_sensitivity"],
+      "free_text": "夜になると体が冷えて布団から出られない。",
+      "concomitant_meds": ["アムロジピン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-004",
+      "chief_complaint": "口の渇き",
+      "symptoms": ["dry_mouth"],
+      "free_text": "昼間に喉がカラカラになり、水をよく飲む。",
+      "concomitant_meds": ["メトホルミン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-005",
+      "chief_complaint": "むくみ",
+      "symptoms": ["edema"],
+      "free_text": "夕方になると足首が腫れて靴がきつくなる。",
+      "concomitant_meds": ["ヒドロクロロチアジド"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-006",
+      "chief_complaint": "腰痛と悪寒",
+      "symptoms": ["pain_back","general_cold_sensitivity"],
+      "free_text": "寒いと腰痛が悪化する。",
+      "concomitant_meds": [],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-007",
+      "chief_complaint": "頭痛とむくみ",
+      "symptoms": ["pain_head","edema"],
+      "free_text": "雨の日は頭が重く、夕方になると顔がむくむ。",
+      "concomitant_meds": ["アトルバスタチン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-008",
+      "chief_complaint": "口渇がないのにむくみがある",
+      "symptoms": ["no_thirst","edema"],
+      "free_text": "喉は渇かないが、体が重くて足がむくむ。",
+      "concomitant_meds": ["プレドニゾロン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-009",
+      "chief_complaint": "背中の痛みと寒気",
+      "symptoms": ["pain_back","general_cold_sensitivity"],
+      "free_text": "背中が痛くて、冷えると悪化する。",
+      "concomitant_meds": ["イブプロフェン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    },
+    {
+      "session_id": "test-010",
+      "chief_complaint": "頭痛と口渇",
+      "symptoms": ["pain_head","dry_mouth"],
+      "free_text": "頭がガンガンして喉が渇きやすい。",
+      "concomitant_meds": ["カンデサルタン"],
+      "lang": "ja",
+      "app_version": "1.0.0"
+    }
+  ]
