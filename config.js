@@ -6,8 +6,9 @@
 const CONFIG = {
     // API Configuration
     API: {
-        // n8n webhook endpoint - 本番環境では実際のURLに変更
+        // n8n webhook endpoints - 本番環境では実際のURLに変更
         BASE_URL: 'https://x-harumi-office.app.n8n.cloud/webhook-test/cd96acc0-ccfd-44fd-bf7c-27db3f87a203',
+        FOLLOWUP_URL: 'https://x-harumi-office.app.n8n.cloud/webhook-test/16edb4b2-650b-4c44-bdb3-3f78bf53f22d',
         
         // Request timeout in milliseconds
         REQUEST_TIMEOUT_MS: 90000,
@@ -183,16 +184,16 @@ const CONFIG = {
 };
 
 // Environment-specific overrides
-if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    // Development environment
-    CONFIG.API.BASE_URL = 'https://x-harumi-office.app.n8n.cloud/webhook-test/cd96acc0-ccfd-44fd-bf7c-27db3f87a203';
-    CONFIG.DEBUG.ENABLED = true;
-    CONFIG.DEBUG.LOG_LEVEL = 'debug';
-} else if (window.location.hostname.includes('staging')) {
-    // Staging environment
-    CONFIG.API.BASE_URL = 'https://x-harumi-office.app.n8n.cloud/webhook/cd96acc0-ccfd-44fd-bf7c-27db3f87a203';
-    CONFIG.DEBUG.ENABLED = true;
-}
+// if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+//     // Development environment
+//     CONFIG.API.BASE_URL = 'https://x-harumi-office.app.n8n.cloud/webhook-test/cd96acc0-ccfd-44fd-bf7c-27db3f87a203';
+//     CONFIG.DEBUG.ENABLED = true;
+//     CONFIG.DEBUG.LOG_LEVEL = 'debug';
+// } else if (window.location.hostname.includes('staging')) {
+//     // Staging environment
+//     CONFIG.API.BASE_URL = 'https://x-harumi-office.app.n8n.cloud/webhook/cd96acc0-ccfd-44fd-bf7c-27db3f87a203';
+//     CONFIG.DEBUG.ENABLED = true;
+// }
 
 // Export configuration for use in other modules
 if (typeof module !== 'undefined' && module.exports) {

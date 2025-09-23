@@ -143,7 +143,7 @@ const LanguageManager = {
     translations: {
         ja: {
             'title': '漢方AI診断支援システム',
-            'subtitle': '症状を入力して漢方処方の候補を取得',
+            'subtitle': '症状を入力して漢方処方の候補を取得（試作版のため、結果の検索には時間がかかります）',
             'form-title': '症状入力フォーム',
             'chief-complaint-label': '主訴',
             'chief-complaint-placeholder': '例：腰痛、頭痛、不眠など',
@@ -175,7 +175,7 @@ const LanguageManager = {
         },
         en: {
             'title': 'Traditional Chinese Medicine AI Diagnostic Support',
-            'subtitle': 'Enter symptoms to get Kanpo prescription candidates',
+            'subtitle': 'Enter symptoms to get Kanpo prescription candidates (Please note that the search results may take some time due to the trial version)',
             'form-title': 'Symptom Input Form',
             'chief-complaint-label': 'Chief Complaint',
             'chief-complaint-placeholder': 'e.g., back pain, headache, insomnia',
@@ -299,18 +299,19 @@ const APIManager = {
             answers: answers
         };
         
-        return this.makeRequest('/followup', payload);
+        return this.makeRequest('', payload, CONFIG.API.FOLLOWUP_URL);
     },
     
     // Make HTTP request with timeout and error handling
-    async makeRequest(endpoint, payload) {
+    async makeRequest(endpoint, payload, customUrl = null) {
         const startTime = Date.now();
         
         try {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), CONFIG.API.REQUEST_TIMEOUT_MS);
             
-            const response = await fetch(CONFIG.API.BASE_URL + endpoint, {
+            const baseUrl = customUrl || CONFIG.API.BASE_URL;
+            const response = await fetch(baseUrl + endpoint, {
                 method: 'POST',
                 headers: CONFIG.API.HEADERS,
                 body: JSON.stringify(payload),
