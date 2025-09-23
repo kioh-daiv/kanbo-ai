@@ -700,6 +700,7 @@ const App = {
         // Set loading state
         AppState.loading = true;
         this.updateLoadingState();
+        UIRenderer.showLoading();
         
         try {
             // Submit to API
@@ -712,7 +713,7 @@ const App = {
             AppState.lastSubmissionTime = Date.now();
             
             // Render results
-            UIRenderer.renderResults(result);
+            UIRenderer.renderResults(result.content);
             
             // Show success message
             const message = CONFIG.SUCCESS_MESSAGES.SUBMISSION_SUCCESS[AppState.form.language];
@@ -752,6 +753,7 @@ const App = {
         // Set loading state
         AppState.loading = true;
         this.updateLoadingState();
+        UIRenderer.showLoading();
         
         try {
             // Submit follow-up
@@ -764,7 +766,7 @@ const App = {
             AppState.error = null;
             
             // Render updated results
-            UIRenderer.renderResults(result);
+            UIRenderer.renderResults(result.content);
             
             // Show success message
             const message = CONFIG.SUCCESS_MESSAGES.FOLLOWUP_SUCCESS[AppState.form.language];
