@@ -10,7 +10,7 @@ const CONFIG = {
         BASE_URL: 'https://x-harumi-office.app.n8n.cloud/webhook-test/cd96acc0-ccfd-44fd-bf7c-27db3f87a203',
         
         // Request timeout in milliseconds
-        REQUEST_TIMEOUT_MS: 30000,
+        REQUEST_TIMEOUT_MS: 90000,
         
         // Retry configuration
         MAX_RETRIES: 3,
